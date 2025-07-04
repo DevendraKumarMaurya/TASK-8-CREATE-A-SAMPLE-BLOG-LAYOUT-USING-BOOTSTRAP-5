@@ -16,10 +16,55 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       crossorigin="anonymous"
     />
+    <!-- Custom CSS for fixed navbar -->
+    <style>
+      body {
+        padding-top: 54px; /* Adjust based on navbar height */
+      }
+      
+      /* Ensure navbar items are properly aligned */
+      .navbar-nav .nav-link {
+        display: flex;
+        align-items: center;
+      }
+      
+      /* Card hover effects */
+      .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+      
+      /* Button hover effects */
+      .btn-primary:hover {
+        transform: scale(1.02);
+      }
+      
+      /* Ensure equal height for cards */
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      
+      /* Newsletter form styling */
+      .newsletter-form {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      
+      /* Footer link hover effects */
+      .footer a:hover {
+        color: #ffffff !important;
+        transition: color 0.3s ease;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand">TechBlog</a>
         <button
@@ -33,44 +78,45 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-home me-1"></i>Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-newspaper me-1"></i>Posts
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-info-circle me-1"></i>About
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-tags me-1"></i>Categories
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fas fa-envelope me-1"></i>Contact
-            </a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <i class="fas fa-home me-1"></i>Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-newspaper me-1"></i>Posts
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-info-circle me-1"></i>About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-tags me-1"></i>Categories
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-envelope me-1"></i>Contact
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
 
@@ -252,12 +298,13 @@
               Subscribe to our newsletter for the latest updates and exclusive
               content.
             </p>
-            <form class="d-flex justify-content-center">
+            <form class="d-flex justify-content-center newsletter-form">
               <input
                 type="email"
                 class="form-control me-2"
                 placeholder="Enter your email"
                 aria-label="Email"
+                required
               />
               <button class="btn btn-primary" type="submit">Subscribe</button>
             </form>
@@ -316,7 +363,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 footer">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
