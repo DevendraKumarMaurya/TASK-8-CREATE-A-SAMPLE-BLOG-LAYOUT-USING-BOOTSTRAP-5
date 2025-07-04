@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAMPLE BLOG LAYOUT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">TechBlog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-home me-1"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-newspaper me-1"></i>Posts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-info-circle me-1"></i>About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-tags me-1"></i>Categories
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-envelope me-1"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1 class="display-4">Welcome to TechBlog</h1>
+        <p class="lead">Your source for the latest tech news and insights</p>
+        <a href="#" class="btn btn-light btn-lg">Explore Posts</a>
+      </div>
+    </header>
+
+    <!-- Blog Posts Section -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="display-5">Latest Blog Posts</h2>
+          <p class="lead text-muted">
+            Discover our latest articles and insights
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=10"
+              class="card-img-top"
+              alt="Blockchain Technology"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Blockchain Revolution in Finance</h5>
+              <p class="card-text flex-grow-1">
+                Explore how blockchain technology is transforming the financial
+                industry with decentralized solutions and cryptocurrency
+                innovations.
+              </p>
+              <div class="mt-auto">
+                <small class="text-muted d-block mb-2"
+                  >Published: July 1, 2025</small
+                >
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=11"
+              class="card-img-top"
+              alt="Cloud Computing"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">The Future of Cloud Computing</h5>
+              <p class="card-text flex-grow-1">
+                Discover the latest trends in cloud infrastructure, serverless
+                computing, and how businesses are scaling in the digital age.
+              </p>
+              <div class="mt-auto">
+                <small class="text-muted d-block mb-2"
+                  >Published: June 28, 2025</small
+                >
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=12"
+              class="card-img-top"
+              alt="Cybersecurity"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Cybersecurity Best Practices 2025</h5>
+              <p class="card-text flex-grow-1">
+                Learn essential cybersecurity strategies to protect your digital
+                assets and maintain privacy in an increasingly connected world.
+              </p>
+              <div class="mt-auto">
+                <small class="text-muted d-block mb-2"
+                  >Published: June 25, 2025</small
+                >
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=13"
+              class="card-img-top"
+              alt="Mobile Development"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mobile App Development Trends</h5>
+              <p class="card-text flex-grow-1">
+                Stay updated with the latest mobile development frameworks,
+                cross-platform solutions, and user experience innovations.
+              </p>
+              <div class="mt-auto">
+                <small class="text-muted d-block mb-2"
+                  >Published: June 22, 2025</small
+                >
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=14"
+              class="card-img-top"
+              alt="Data Science"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Science and Analytics</h5>
+              <p class="card-text flex-grow-1">
+                Unlock the power of big data with advanced analytics, machine
+                learning algorithms, and data visualization techniques.
+              </p>
+              <div class="mt-auto">
+                <small class="text-muted d-block mb-2"
+                  >Published: June 20, 2025</small
+                >
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250"
+              class="card-img-top"
+              alt="IoT Technology"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Internet of Things (IoT) Innovation</h5>
+              <p class="card-text flex-grow-1">
+                Explore how IoT devices are revolutionizing smart homes,
+                industries, and cities with interconnected technology solutions.
+              </p>
+              <div class="mt-auto">
+                <small class="text-muted d-block mb-2"
+                  >Published: June 18, 2025</small
+                >
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="display-5">Join Our Community</h2>
+            <p class="lead text-muted">
+              Subscribe to our newsletter for the latest updates and exclusive
+              content.
+            </p>
+            <form class="d-flex justify-content-center">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter your email"
+                aria-label="Email"
+              />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="display-5">What Our Clients Say</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <p class="card-text">
+                  "TechBlog has been an invaluable resource for staying updated
+                  with the latest tech trends."
+                </p>
+                <h5 class="card-title">John Doe</h5>
+                <small class="text-muted">CEO, XYZ Company</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <p class="card-text">
+                  "The insights and articles are always top-notch and very
+                  informative."
+                </p>
+                <h5 class="card-title">Jane Smith</h5>
+                <small class="text-muted">CTO, ABC Tech</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <p class="card-text">
+                  "TechBlog has helped me learn new skills and expand my
+                  knowledge in tech."
+                </p>
+                <h5 class="card-title">Michael Johnson</h5>
+                <small class="text-muted">Software Engineer</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>About TechBlog</h5>
+            <p>
+              TechBlog is your go-to source for the latest news, insights, and
+              trends in the technology industry. We aim to provide valuable
+              content that helps you stay informed and inspired.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Categories</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Follow Us</h5>
+            <div class="d-flex flex-column">
+              <a href="#" class="text-white-50 text-decoration-none mb-2">
+                <i class="fab fa-facebook-f me-2"></i>Facebook
+              </a>
+              <a href="#" class="text-white-50 text-decoration-none mb-2">
+                <i class="fab fa-twitter me-2"></i>Twitter
+              </a>
+              <a href="#" class="text-white-50 text-decoration-none mb-2">
+                <i class="fab fa-linkedin-in me-2"></i>LinkedIn
+              </a>
+              <a href="#" class="text-white-50 text-decoration-none mb-2">
+                <i class="fab fa-instagram me-2"></i>Instagram
+              </a>
+              <a href="#" class="text-white-50 text-decoration-none">
+                <i class="fab fa-youtube me-2"></i>YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p>&copy; 2025 TechBlog. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
